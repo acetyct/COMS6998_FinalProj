@@ -9,15 +9,15 @@ In this project we set out to optimize convolution neural networks through explo
 This repository contains the codes, any relevant training logs, and all models produced during the project. <br>
 The training logs and models for ResNet 20 and ResNet 44 are stored in separate folders respectively.<br>
 
-Under the folder codes, we include all training codes for the trials of exploration, for example, testing constant sparsity, poly-sparsity, and distributed training, using CIFAR-10 and CIFAR-100 datasets. Note that the code for producing the final super model is not included in this folder. <br>
+Under the folder codes, we include all training codes for the trials of exploration, for example, testing constant sparsity, poly-sparsity, and distributed training, using CIFAR-10 and CIFAR-100 datasets. <br>
 
-The code for producing the final super model is named super_final_actual.ipynb. <br>
+The notebooks that produced the results for our super model trials are named super_sixty.ipynb and super_seventy.ipynb in the Code folder. <br>
 
 We tried two different “super”-models, one with final sparsity 60% and one with 70% sparsity. As mentioned in the presentation, the hyperparameters are found through 29 trial runs on a purely pruning based model. We selected the maximal sparsity, 60%, that gives the desired validation accuracy. We tried both 60% and 70% in order to fine tune the model. The training log and trained models are stored under /Super_Model/super_0.6 and  /Super_Model/super_0.7 <br>
 
 
 **Example commands to execute the code**   <br>     
-We included all codes as jupyter notebooks, and all the notebooks can be run on GCP VMs. Note that for the distributed training of the supermodel, it needs to be run on Vertex AI. The set up of Vertex AI is described in detail in this video: https://www.youtube.com/watch?v=rAGauhXYgw4&list=WL&index=1 . When logged into Vertex AI workbench, press the "JupyterLab" button to launch jupyterlab, and upload the jupyter notebook using the UI. Then, on the upper-right corner, select the machine configuration. We used 4 CPUs, 15 GB RAM, and 1 Tesla V100. Now, the distributed training notebook can be run just as a standard jupyter notebook. Run super_final_actual.ipynb to train a Cifar100 super model. Feel free to expermiment with paramters such as inital/final sparsity, pruning frequency, pruning schedule, etc easily. <br>
+We included all codes as jupyter notebooks, and all the notebooks can be run on GCP VMs. Note that for the distributed training of the supermodel, it needs to be run on Vertex AI. The set up of Vertex AI is described in detail in this video: https://www.youtube.com/watch?v=rAGauhXYgw4&list=WL&index=1 . When logged into Vertex AI workbench, press the "JupyterLab" button to launch jupyterlab, and upload the jupyter notebook using the UI. Then, on the upper-right corner, select the machine configuration. We used 4 CPUs, 15 GB RAM, and 1 Tesla V100. Now, the distributed training notebook can be run just as a standard jupyter notebook. Run super_demo.ipynb to train a Cifar100 super model. Feel free to experiment with hyperparameters such as inital/final sparsity, pruning frequency, pruning schedule, etc as instructed in the demo notebook. <br>
 
 **Results (including charts/tables) and observations**  <br>
 A graph to illustrate the architecture of our super model: <br>
