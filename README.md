@@ -6,7 +6,7 @@ In this project we set out to optimize convolution neural networks through explo
 
 
 **A description of the repository** <br>
-This repository contains the codes, any relevant training logs, and all models produced during the project. <br>
+This repository contains the codes and all relevant training logs/models produced during the project. <br>
 The training logs and models for ResNet 20 and ResNet 44 are stored in separate folders respectively.<br>
 
 Under the folder codes, we include all training codes for the trials of exploration, for example, testing constant sparsity, poly-sparsity, and distributed training, using CIFAR-10 and CIFAR-100 datasets. <br>
@@ -26,7 +26,7 @@ A graph to illustrate the architecture of our super model: <br>
 <br>
 
 Super Model - 60% Sparsity <br>
-When testing polynomial decaying sparsity with a final sparsity of 60%, we find the supermodel outperforms the model with strictly pruning. Accuracy on the testing set is highest using the resnet 44; with both shallow and deep networks seeing a 1.5 times increase in testing accuracy.  When quantization is applied, the same networks are able to be stored In nearly half the bytes of the original model without dampening accuracy. This shows that the supermodel Is superior in terms of size and accuracy. 
+When testing polynomial decaying sparsity with a final sparsity of 60%, we find the supermodel outperforms the model with strictly pruning. Accuracy on the testing set is highest using the resnet 44; with both shallow and deep networks seeing a 1.5 times increase in testing accuracy.  When quantization is applied, the same networks are able to be stored In nearly half the bytes of the original model without dampening accuracy. This shows that the supermodel is superior in terms of size and accuracy. 
 <br>
 Noticeable improvement in accuracy  <br>
 Both Resnet20 and Resnet44  <br>
