@@ -25,3 +25,24 @@ Example commands to execute the code   <br>
 We included the codes as jupyter notebook, and all the notebooks can be run on GCP VMs. Note that for the distributed training of the super model, it need to be run on Vertex AI. The set up of Vertex AI is described in detail in this video: https://www.youtube.com/watch?v=rAGauhXYgw4&list=WL&index=1 . When logged into Vertex AI workbench, just hit the "JupyterLab" button to getinto a jupyterlab, and upload the jupyternotebook using the UI. Then, on the upper-right corner, select the machine configuration. We used 4 CPUs, 15 GB RAM, and 1 Tesla V100. Then, the distributed training notebook can be run normally.<br>
 
 Results (including charts/tables) and your observations  <br>
+A graph to illustrate the architecture of our super model: <br>
+
+<img width="747" alt="Screen Shot 2022-12-19 at 12 58 59 AM" src="https://user-images.githubusercontent.com/48727287/208357975-26d242e5-8ff6-48f7-b5af-e5dc662c887f.png">
+<br>
+
+Super Model - 60% Sparsity <br>
+Noticeable improvement in accuracy  <br>
+Both Resnet20 and Resnet44  <br>
+Best Overall  <br>
+ResNet 44 SuperModel  <br>
+~ x1.5 test accuracy improvement  <br>
+Size of quantized file:   <br>
+~ x1.8 memory reduction for both  <br>
+
+<img width="302" alt="Screen Shot 2022-12-19 at 1 01 03 AM" src="https://user-images.githubusercontent.com/48727287/208358211-122fe9f2-0c2a-4475-ae5e-96f5a5623b5f.png">
+<br>
+
+
+
+
+
