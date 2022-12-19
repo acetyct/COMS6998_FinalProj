@@ -11,7 +11,7 @@ The training logs and models for ResNet 20 and ResNet 44 are stored in separate 
 
 Under the folder codes, we include all training codes for the trials of exploration, for example, testing constant sparsity, poly-sparsity, and distributed training, using CIFAR-10 and CIFAR-100 datasets. <br>
 
-The notebooks that produced the results for our super model trials are named super_sixty.ipynb and super_seventy.ipynb in the Code folder. <br>
+The notebooks that produced the results for our super model trials are named super_sixty.ipynb and super_seventy.ipynb in the codes folder. <br>
 
 We tried two different “super”-models, one with final sparsity 60% and one with 70% sparsity. As mentioned in the presentation, the hyperparameters are found through 29 trial runs on a purely pruning based model. We selected the maximal sparsity, 60%, that gives the desired validation accuracy. We tried both 60% and 70% in order to fine tune the model. The training log and trained models are stored under /Super_Model/super_0.6 and  /Super_Model/super_0.7 <br>
 
