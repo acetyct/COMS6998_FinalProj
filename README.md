@@ -1,5 +1,4 @@
-# COMS6998_FinalProj: <br>
-# Building a Super Model: Pruning Techniques and Distributed DL for Training Efficiency
+# COMS6998_FinalProj: Building a Super Model: Pruning Techniques and Distributed DL for Training Efficiency
 
 **A description of the project**  <br>
 In this project we set out to optimize convolution neural networks through exploring the techniques of data augmentation, pruning, mixed precision, quantization and synchronous training. 
