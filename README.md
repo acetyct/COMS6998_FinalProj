@@ -1,4 +1,4 @@
-# COMS6998_FinalProj
+# COMS6998_FinalProj: Building a Super Model: Pruning Techniques and Distributed DL for Training Efficiency
 
 **A description of the project**  <br>
 In this project we set out to optimize convolution neural networks through exploring the techniques of data augmentation, pruning, mixed precision, quantization and synchronous training. 
@@ -28,13 +28,9 @@ A graph to illustrate the architecture of our super model: <br>
 Super Model - 60% Sparsity <br>
 When testing polynomial decaying sparsity with a final sparsity of 60%, we find the supermodel outperforms the model with strictly pruning. Accuracy on the testing set is highest using the resnet 44; with both shallow and deep networks seeing a 1.5 times increase in testing accuracy.  When quantization is applied, the same networks are able to be stored In nearly half the bytes of the original model without dampening accuracy. This shows that the supermodel is superior in terms of size and accuracy. 
 <br>
-Noticeable improvement in accuracy  <br>
-Both Resnet20 and Resnet44  <br>
-Best Overall  <br>
-ResNet 44 SuperModel  <br>
-~ x1.5 test accuracy improvement  <br>
-Size of quantized file:   <br>
-~ x1.8 memory reduction for both  <br>
+We achieved a Noticeable improvement in accuracy, for both Resnet20 and Resnet44.  <br>
+The Best Overall model is ResNet 44 SuperModel. It achieved ~ x1.5 test accuracy improvement.  <br>
+Size of quantized file is ~ x1.8 memory reduction for both.  <br>
 
 <img width="302" alt="Screen Shot 2022-12-19 at 1 01 03 AM" src="https://user-images.githubusercontent.com/48727287/208358211-122fe9f2-0c2a-4475-ae5e-96f5a5623b5f.png">
 <br>
