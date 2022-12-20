@@ -42,12 +42,9 @@ Size of quantized file:   <br>
 Super Model - 70% Sparsity  <br>
 Next, we attempted to fine-tune the supermodel slightly by keeping all the other parameters the same but changing final sparsity to 70%. The goal here would be to store an even smaller model, with 10% more zero weights, without losing much accuracy. The increase in test accuracy is similar to that of the model with 60% sparsity, losing just 1% accuracy between the best model for both, resnet 44. Although, there is little improvement in memory over the 60% sparsity model. When examined from the perspective of resnet 20, we do see a reduction of 1.8x the size, like with 60% sparsity.
 <br>
-Noticeable improvement in accuracy  <br>
-Both ResNet 20 and ResNet 44   <br>
-Best Overall  <br>  
-ResNet 44 SuperModel   <br>
-~ x1.5 test accuracy improvement  <br>
-Size of quantized file:   <br>
+We achieved a Noticeable improvement in accuracy, for both ResNet 20 and ResNet 44.   <br>
+The Best Overall model is ResNet 44 SuperModel. It has ~ x1.5 test accuracy improvement.  <br>
+The improvements of size of quantized file are listed below:   <br>
 ~ x1.8 memory reduction for Resnet 20  <br>
 ~ x1.4 memory reduction for Resnet 44  <br>
 
@@ -58,16 +55,8 @@ Size of quantized file:   <br>
 The Best SuperModel  <br>
 Overall, the model that performs best in terms of test accuracy is the resnet 44 supermodel with 60% sparsity. However, the loss in accuracy is very minimal between 60% and 70% sparsity. Given you are willing to sacrifice the one percent accuracy, you could opt for the other approach of using the 70% sparsity model. However, there are no noticeable decreases in the size of the quantized model that rounding doesn’t obscure. Perhaps there was a bug in the code, or somehow the quantization isn’t captured correctly for this model. However, we do see that quantization was properly applied for resnet 20, roughly halving memory. This makes sense because increasing the number of zeros should in theory improve quantization. Overall, if you were going to train this dataset with resnet 20, the supermodel with 70% sparsity would be the best choice for a very small model, faster training time and only 3% less accuracy.
 <br>
-Best Accuracy <br>
-ResNet 44 SuperModel   <br>
-60% sparsity   <br>
-Narrow margin with 70% sparsity  <br>
-Best Size  <br>
-ResNet 44 SuperModel   <br>
-same for both sparsities   <br>
-Could be a bug  <br>
-ResNet 20 SuperModel  <br>
-Do see quantization reduction in size  <br>
+The Best Accuracy is achieved by ResNet 44 SuperModel, 60% sparsity, Narrow margin with 70% sparsity.  <br>
+The Best Size is ResNet 44 SuperModel, same for both sparsities.  <br>
 
 <img width="380" alt="Screen Shot 2022-12-19 at 1 03 11 AM" src="https://user-images.githubusercontent.com/48727287/208358468-361a0170-5d90-4cf9-abd9-27cdd8af4344.png">
 
